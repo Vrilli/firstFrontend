@@ -1,12 +1,20 @@
-/*import Beneficios from '../components/Beneficios';
-import '../styles/beneficios.css';
+// import type { MetaFunction } from "@remix-run/node";
+// import Beneficios from "~/Components/Benefits";
 
-export default function Index() {
-  return (
-    <div>
-      {/* ... otros componentes ... *///*}/*
-      /*<Beneficios />
-      {/* ... otros componentes ... *//*/}
-    /*</div>
-  );
-}*/
+
+// export const meta: MetaFunction = () => {
+//   return [
+//     { title: "Fundación Antivirus" },
+//   ];
+// };
+
+// export default function Index() {
+//   return (
+//     <div>
+//       <div>
+//         <Beneficios/>
+//       </div>
+//   </div>
+
+// );
+// }
