@@ -2,6 +2,7 @@ import { useActionData } from "@remix-run/react";
 import { json, redirect } from "@remix-run/node";
 import type { ActionFunction } from "@remix-run/node";
 import { register } from "~/services/authService";
+import Benefits from "../Components/Benefits"
 
 export const action: ActionFunction = async ({ request }) => {
   const formData = await request.formData();
@@ -34,8 +35,8 @@ export default function Register() {
   const actionData = useActionData<{ error?: string; values?: any }>();
 
   return (
-    <>
-      <section className="flex flex-row items-center justify-center bg-white pb-10 pt-20 dark:bg-[#0f1629]">
+    
+      <section className="flex flex-col items-center justify-center bg-white pb-10 pt-20 dark:bg-[#0f1629]">
         <div className="hidden md:block w-[900px] h-[800px]">
           <spline-viewer
             className="w-full h-full"
@@ -89,8 +90,8 @@ export default function Register() {
             </button>
           </form>
         </div>
+        <Benefits/>
       </section>
-    </>
 
   );
 }
