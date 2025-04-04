@@ -3,6 +3,7 @@ import { json, redirect } from "@remix-run/node";
 import type { ActionFunction } from "@remix-run/node";
 import { login, register } from "~/services/authService";
 import { tokenCookie } from "~/utils/cookies";
+import Benefits from "~/Components/Benefits";
 
 export const action: ActionFunction = async ({ request }) => {
   const formData = await request.formData();
@@ -48,8 +49,7 @@ export default function Register() {
   const actionData = useActionData<{ error?: string; values?: any }>();
 
   return (
-
-    <section className="flex flex-col items-center justify-center bg-white pb-10 pt-20 dark:bg-[#0f1629]">
+    <div className="flex flex-col items-center justify-center bg-white pb-10 pt-20 dark:bg-[#0f1629]">
       <section className="flex flex-row items-center justify-center bg-white pb-10 pt-20 dark:bg-[#0f1629] mt-1">
         <div className="hidden md:block w-[900px] h-[800px]">
           <spline-viewer
@@ -102,10 +102,10 @@ export default function Register() {
             </button>
           </form>
         </div>
-        <Benefits />
-        <section>
-          
-        </section>
+        
       </section>
-      ) 
-      };   
+      <Benefits />
+    </div>
+
+  )
+}

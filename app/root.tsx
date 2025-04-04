@@ -9,11 +9,11 @@ import {
 } from "@remix-run/react";
 import { json, type LinksFunction } from "@remix-run/node";
 import { Toaster } from "react-hot-toast";
-import Navbar from "~/components/Navbar/Navbar";
-import Footer from "~/components/Footer/Footer";
 import "./tailwind.css";
 import { checkAuth } from "~/services/authService";
 import type { LoaderFunction } from "@remix-run/node";
+import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 
 
 export const loader: LoaderFunction = async ({ request }: { request: Request }) => {
