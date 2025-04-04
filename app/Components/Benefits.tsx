@@ -41,7 +41,7 @@ export default function Benefits() {
             className="bg-muted shadow-lg rounded-lg p-6 text-justify dark:bg-[#0f1629] transform transition-transform hover:scale-105"
           >
             <div className="flex flex-col justify-center items-center gap-4">
-              <img src={data.href} alt="Check icon" className="w-6 h-6" />
+              <img src={data.href} alt="Check icon" />
               <h3 className="text-3xl text-[#FAA307] font-bold font-raleway">{data.title}</h3>
             </div>
             <p className="text-2xl font-raleway mt-2">{data.description}</p>
