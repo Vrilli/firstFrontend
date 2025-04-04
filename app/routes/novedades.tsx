@@ -2,7 +2,6 @@ import { useLoaderData } from '@remix-run/react';
 import type { LoaderFunction } from '@remix-run/node';
 import { useState } from 'react';
 
-
 interface LoaderData {
     message: string;
     images: string[];

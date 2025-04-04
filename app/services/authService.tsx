@@ -34,7 +34,6 @@ export async function login(email: string, password: string) {
 * @param {string} birthDate - fecha de nacimiento del usuario.
 * @param {string} email - Correo del usuario.
 * @param {string} password - Contraseña del usuario.
-* @param {number} role - rol del usuario.
 * @returns {Promise<Object>} - Datos del usuario registrado.
 */
 export async function register(
@@ -42,8 +41,7 @@ export async function register(
     lastName: string,
     birthDate: string,
     email: string,
-    password: string,
-    roleId: number=1
+    password: string
 ) {
     try {
         const response = await fetch('http://localhost:5000/api/auth/register', {
@@ -51,7 +49,7 @@ export async function register(
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ firstName, lastName, birthDate, email, password, roleId })
+            body: JSON.stringify({ firstName, lastName, birthDate, email, password})
         });
 
         if(response.ok) {
