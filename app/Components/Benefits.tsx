@@ -1,29 +1,29 @@
-Componente: Benefits
+Benefits
 const check = "/assets/register/icons/check.svg"
 export default function Benefits() {
   const gridData = [
     {
       id: 1,
       title: "Registro y creación del perfil personal",
-      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ",
+      description: "Crea tu perfil personal para destacar tus logros, habilidades y aspiraciones. Esto te permitirá tener una presencia personalizada dentro de nuestra comunidad, facilitando el acceso a oportunidades adecuadas para ti. ",
 
     },
     {
       id: 2,
       title: "Guardar oportunidades",
-      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ",
+      description: "Encuentra y guarda oportunidades relevantes que se alineen con tus intereses y metas académicas. De esta manera, podrás acceder a ellas fácilmente y no perderte ninguna opción valiosa. ",
 
     },
     {
       id: 3,
       title: "Recomendaciones personalizadas",
-      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ",
+      description: "Recibe sugerencias específicas y adaptadas a tus necesidades y perfil. Nuestro sistema inteligente analizará tus intereses y te brindará recomendaciones que te ayudarán a aprovechar al máximo las oportunidades disponibles. ",
 
     },
     {
       id: 4,
       title: "Contenido exclusivo",
-      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ",
+      description: "Accede a una variedad de recursos y materiales exclusivos, diseñados para apoyarte en tu camino académico y profesional. Estos incluyen guías, webinars, talleres y mucho más, todo pensado para ayudarte a tener éxito. ",
 
     },
 

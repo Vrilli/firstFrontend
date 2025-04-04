@@ -108,9 +108,10 @@ export default function Categorias() {
                     />
 
                     <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">Nombre*</label>
+                        <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-1">Nombre*</label>
                         <input
                             type="text"
+                            id="nombre"
                             name="nombre"
                             required
                             className="border p-2 rounded w-full"
@@ -120,8 +121,9 @@ export default function Categorias() {
                     </div>
 
                     <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">Descripción</label>
+                        <label htmlFor="descripcion" className="block text-sm font-medium text-gray-700 mb-1">Descripción</label>
                         <textarea
+                            id="descripcion"
                             name="descripcion"
                             className="border p-2 rounded w-full"
                             placeholder="Descripción de la categoría"

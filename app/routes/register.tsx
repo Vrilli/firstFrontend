@@ -25,7 +25,7 @@ export const action: ActionFunction = async ({ request }) => {
       fechaNacimiento as string,
       email as string,
       password as string);
-       
+
     const data = await login(email as string, password as string);
 
     const token = data.token.replace(/['"]+/g, "");
@@ -33,7 +33,7 @@ export const action: ActionFunction = async ({ request }) => {
     if (!token) {
       return json({ error: "No se pudo obtener el token." }, { status: 500 });
     }
-    
+
 
     return redirect("/novedades", {
       headers: {
@@ -48,9 +48,8 @@ export default function Register() {
   const actionData = useActionData<{ error?: string; values?: any }>();
 
   return (
-    
-      <section className="flex flex-col items-center justify-center bg-white pb-10 pt-20 dark:bg-[#0f1629]">
-    <>
+
+    <section className="flex flex-col items-center justify-center bg-white pb-10 pt-20 dark:bg-[#0f1629]">
       <section className="flex flex-row items-center justify-center bg-white pb-10 pt-20 dark:bg-[#0f1629] mt-1">
         <div className="hidden md:block w-[900px] h-[800px]">
           <spline-viewer
@@ -103,10 +102,10 @@ export default function Register() {
             </button>
           </form>
         </div>
-        <Benefits/>
+        <Benefits />
+        <section>
+          
+        </section>
       </section>
-
-    </>
-
-  );
-}
+      ) 
+      };   
