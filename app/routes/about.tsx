@@ -88,7 +88,7 @@ const About = () => {
           </ul>
         </div>
         <div>
-          <img className="rounded-md shadow-md" src="/public/imgAbout/image.jpeg" alt="image" />
+          {/* <img className="rounded-md shadow-md" src="/public/imgAbout/image.jpeg" alt="image" /> */}
         </div>
       </section>
     </div>

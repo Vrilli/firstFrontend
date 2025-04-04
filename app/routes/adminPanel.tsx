@@ -1,8 +1,8 @@
 import { useState } from "react";
 import UserManagement from "./user";
 import Bootcamp from "./bootcamps";
-import Categorias from "./category";
-import Instituciones from "./instituciones";
+//import Categorias from "./category";
+//import Instituciones from "./instituciones";
 import Oportunidades from "./opportunities";
 import Tematicas from "./themes";
 
@@ -28,12 +28,12 @@ export default function Dashboard() {
                 return <div className="bg-white p-6 rounded-md shadow-md"><UserManagement /></div>;
             case "bootcamps":
                 return <div className="bg-white p-6 rounded-md shadow-md"><Bootcamp /></div>;
-            case "category":
-                return <div className="bg-white p-6 rounded-md shadow-md"><Categorias /></div>;
+            //case "category":
+                //return <div className="bg-white p-6 rounded-md shadow-md"><Categorias /></div>;
             case "opportunities":
                 return <div className="bg-white p-6 rounded-md shadow-md"><Oportunidades /></div>;
-            case "instituciones":
-                return <div className="bg-white p-6 rounded-md shadow-md"><Instituciones /></div>;
+            //case "instituciones":
+                //return <div className="bg-white p-6 rounded-md shadow-md"><Instituciones /></div>;
             case "themes":
                 return <div className="bg-white p-6 rounded-md shadow-md"><Tematicas /></div>;
         }

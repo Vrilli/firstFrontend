@@ -30,29 +30,29 @@ export const action: ActionFunction = async ({ request }) => {
     return json({ error: "Método no válido" }, { status: 400 });
   }
 
-  const bootcampData = {
-    nombre: formData.get("nombre") as string,
-    descripcion: formData.get("descripcion") as string,
-    informacion: formData.get("informacion") as string,
-    costos: Number(formData.get("costos")),
-    institucionId: Number(formData.get("institucionId"))
-  };
+  // const bootcampData = {
+  //   nombre: formData.get("nombre") as string,
+  //   descripcion: formData.get("descripcion") as string,
+  //   informacion: formData.get("informacion") as string,
+  //   costos: Number(formData.get("costos")),
+  //   institucionId: Number(formData.get("institucionId"))
+  // };
 
   try {
-    let response;
-    const baseUrl = "http://localhost:3000/api/Bootcamp";
+    //let response;
+    //const baseUrl = "http://localhost:3000/api/Bootcamp";
     
     switch (method) {
       case "POST":
-        response = await axios.post(baseUrl, bootcampData);
+        //response = await axios.post(baseUrl, bootcampData);
         break;
       case "PUT":
         if (!id) return json({ error: "ID requerido para actualizar" }, { status: 400 });
-        response = await axios.put(`${baseUrl}/${id}`, bootcampData);
+        //response = await axios.put(`${baseUrl}/${id}`, bootcampData);
         break;
       case "DELETE":
         if (!id) return json({ error: "ID requerido para eliminar" }, { status: 400 });
-        response = await axios.delete(`${baseUrl}/${id}`);
+       // response = await axios.delete(`${baseUrl}/${id}`);
         break;
       default:
         return json({ error: "Método no soportado" }, { status: 405 });
@@ -83,7 +83,7 @@ export default function AdminPanel() {
           <input type="hidden" name="_method" value="POST" />
           
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Nombre*</label>
+            {/* <label className="block text-sm font-medium text-gray-700 mb-1">Nombre*</label> */}
             <input 
               type="text" 
               name="nombre" 
@@ -94,7 +94,7 @@ export default function AdminPanel() {
           </div>
           
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Descripción*</label>
+            {/* <label className="block text-sm font-medium text-gray-700 mb-1">Descripción*</label> */}
             <textarea 
               name="descripcion" 
               required 
@@ -105,7 +105,7 @@ export default function AdminPanel() {
           </div>
           
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Información Adicional</label>
+            {/* <label className="block text-sm font-medium text-gray-700 mb-1">Información Adicional</label> */}
             <textarea 
               name="informacion" 
               className="border p-2 rounded w-full" 
@@ -116,7 +116,7 @@ export default function AdminPanel() {
           
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Costos*</label>
+              {/* <label className="block text-sm font-medium text-gray-700 mb-1">Costos*</label> */}
               <input 
                 type="number" 
                 name="costos" 
@@ -129,7 +129,7 @@ export default function AdminPanel() {
             </div>
             
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">ID de Institución*</label>
+              {/* <label className="block text-sm font-medium text-gray-700 mb-1">ID de Institución*</label> */}
               <input 
                 type="number" 
                 name="institucionId" 
